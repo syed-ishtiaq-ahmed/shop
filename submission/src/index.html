@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Electria
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div style="background-image: linear-gradient(to left,#751aff, #4d4dff, #0040ff);" id="bg">
+      <div class="navbar" id="head">
+        <a href="#home"><img src="images/logo.png" alt="logo" id="logo" width="70"/></a>
+        <div style=" margin-top: 15px;"><a href="#" class="brandname">Electria</a></div>
+        <div id="collapseContainer">
+          <div id="expander" onclick="expander()">
+            <i class="fa fa-align-justify" style="font-size:36px; color: white;"></i>
+          </div>
+          <div id="navigatorcontainer" class="">
+            <div style="width: 10%;"></div>
+            <div><a href="#" class="navbara" onclick="allProducts()" id="homeBtn">Home</a></div>
+            <div>
+              <a href="contactus.html" class="navbara">Contact</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Category</button>
+              <div class="dropdown-content">
+                <a href="#" class="dropdowna" onclick="displayCameras()">camera</a>
+                <a href="#" class="dropdowna" onclick="displayWatches()">watch</a>
+                <a href="#" class="dropdowna" onclick="displayheadphones()">headphones</a>
+                <a href="#" class="dropdowna" onclick="allProducts()">All</a>
+              </div>
+            </div>
+            <div class="navbara" id="headsearch" style="margin-left: 325px;">
+              <form action="" method="post" onsubmit="return search()" name="searchForm">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  style="color: black;"
+                  name="word"
+                  class="hform"
+                  id="htext"
+                />
+                <input
+                  type="submit"
+                  value="search"
+                  class="hform"
+                  style="color: black;  background-color: lightgreen; border: 1px solid lightgreen; border-radius: 50px;"
+                  id="hbtn"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="home" class="height">
+        <div id="homeimg" class="height" style="float:left; width:50%;">
+          <img src="images/undraw_successful_purchase_uyin.svg" id="tr" width="600" />
+        </div>
+        <div class="height" style="overflow: hidden; position:relative; padding-top: 25px;">
+          <div style="float:left;">
+            <div id="hometext">
+              <h1 style="font-size: 40px;color: white;">
+                <span style="color:#B72C69">Electria</span><br />
+                Electronic shop
+              </h1>
+              <p style="font-size: 14px; color: white;" class="p1">
+                <br />
+                This shop is specially designed for selling electronic products world wide. We have
+                initially decided to sell headphones, watches and camera, and efter successful
+                services of these product we will expand our shop and also start handset and other
+                products.
+              </p>
+              <p style="font-size: 14px; color: white;" class="p2">
+                <br />
+                We welcome you to <strong>Electria</strong> where you can found different verieties
+                of watches, cameras and headphones. We offer reliable products and affordable
+                prices. Its time to visit the shop!.
+              </p>
+              <a href="#catagory"
+                ><button
+                  style="
+          background-color: lightskyblue;
+          border-radius: 25px;
+          width: 150px;
+          height: 40px;
+          color: white;
+          border: none;
+          margin: auto;"
+                  id="btnhover"
+                >
+                  Shop now
+                </button>
+              </a>
+            </div>
+          </div>
+          <div id="circledDiv"></div>
+        </div>
+      </div>
+    </div>
+    <div class="catagory">
+      <div style="width:90%; margin-left: auto; margin-right: auto;">
+        <p id="catagory" style="float: left;">Catagory: All</p>
+        <p style="float: right;cursor: pointer;" onclick="allProducts()">View all catagories</p>
+      </div>
+    </div>
+    <div style="width: 100%; height: 1px;"></div>
+    <div id="imageContainer">
+      <div id="pc1"></div>
+    </div>
+    <script>
+      allProducts();
+    </script>
+    <div class="footer">
+      <div id="footer">
+        <div class="grid-container">
+          <a href="#" class="grid-item brandname">Electria</a>
+          <a class="grid-item" href="https://facebook.com"
+            ><i class="fa fa-facebook" style="font-size:36px; color: white;" class="footer_icon"></i
+          ></a>
+          <a class="grid-item" href="https://twitter.com"
+            ><i
+              class="fa fa-twitter-square"
+              style="font-size:36px; color: white;"
+              class="footer_icon"
+            ></i
+          ></a>
+          <div class="grid-item">
+            <form action="https://formspree.io/f/xpzoyakb" method="post">
+              <input
+                type="email"
+                placeholder="Enter Email to subscribe"
+                style="color: black;"
+                name="_replyto"
+                class="footer_form"
+              />
+              <input
+                type="submit"
+                value="subscribe"
+                class="footer_form"
+                style="color: black; width: 100px; background-color: lightgreen; border: 1px solid lightgreen; border-radius: 50px;"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

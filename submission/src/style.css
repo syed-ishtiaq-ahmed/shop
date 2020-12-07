@@ -1,0 +1,468 @@
+/* Add any CSS you need to this file. */
+@font-face {
+  font-family: Roboto;
+  src: url('Roboto-Light.ttf');
+} /*font*/
+@font-face {
+  font-family: Dancing;
+  src: url('DancingScript-Regular.ttf');
+} /*font*/
+
+.navbar {
+  background-color: #794c74;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  margin-bottom: 0px;
+}
+.navbara {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbara:visited {
+  text-decoration: none;
+  color: white;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbara:hover {
+  background-color: silver;
+  text-decoration: none;
+}
+.brandname:hover {
+  text-decoration: none;
+  color: white;
+}
+.brandname:visited {
+  text-decoration: none;
+  color: white;
+}
+#navigatorcontainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+#homeBtn {
+  margin-left: 100px;
+}
+#collapsecontainer {
+  display: flex;
+  flex-direction: row;
+  top: -5px;
+  float: none;
+}
+#expander {
+  display: none;
+  float: right;
+}
+.dropbtn {
+  background-color: #794c74;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: silver;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdowna {
+  color: black;
+}
+.dropdowna:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 6px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: silver;
+}
+
+.catagory {
+  width: 100%;
+}
+
+#home {
+  background-image: linear-gradient(to left, #751aff, #4d4dff, #0040ff);
+  height: 500px;
+}
+#homeimg {
+  padding-top: 50px;
+}
+
+#hometext {
+  padding-top: 25px;
+  margin-left: 10px;
+}
+
+#imageContainer {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#graphiccontainer {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  display: table;
+}
+#card1 {
+  width: 22%;
+  height: 100%;
+  float: left;
+  margin-left: 2%;
+}
+#card2 {
+  width: 22%;
+  height: 100%;
+  float: left;
+  margin-left: 2%;
+}
+#card3 {
+  width: 22%;
+  height: 100%;
+  float: right;
+  margin-right: 3%;
+}
+#card4 {
+  width: 22%;
+  height: 100%;
+  float: left;
+  margin-left: 3%;
+}
+.g {
+  border-radius: 25px;
+  background-color: lightgray;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.astyle:hover {
+  text-decoration: none;
+}
+.grimg {
+  width: 100%;
+  height: 320px;
+  border-radius: 25px 25px 0 0;
+}
+
+.description {
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: Roboto;
+}
+.price {
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: Dancing;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #794c74;
+  color: white;
+  text-align: center;
+  justify-items: stretch;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+}
+.boxes {
+  padding: 5px;
+}
+.boxStyle {
+  width: 233px !important;
+  border-radius: 5px;
+}
+.footer_form {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1350px) {
+  #headsearch {
+    margin-left: 300px !important;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  #headsearch {
+    margin-left: 280px !important;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  #headsearch {
+    margin-left: 260px !important;
+  }
+}
+@media only screen and (max-width: 1278px) {
+  #headsearch {
+    margin-left: 230px !important;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  #headsearch {
+    margin-left: 200px !important;
+  }
+}
+@media only screen and (max-width: 1220px) {
+  #headsearch {
+    margin-left: 180px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .description {
+    font-size: 12px;
+  }
+  .footer_form {
+    font-size: 20px;
+  }
+  #headsearch {
+    margin-left: 100px !important;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .description {
+    font-size: 10px;
+  }
+  .footer_form {
+    font-size: 20px;
+  }
+  #headsearch {
+    margin-left: 50px !important;
+  }
+  #hform {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1045px) {
+  #headsearch {
+    margin-left: 30px !important;
+  }
+  #htext {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .description {
+    font-size: 14px;
+  }
+  #card1 {
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin-left: 2%;
+  }
+  #card2 {
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin-left: 9%;
+  }
+  #card3 {
+    width: 40%;
+    height: 100%;
+    float: right;
+    margin-right: 9%;
+  }
+  #card4 {
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin-left: 9%;
+  }
+  .description {
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 100;
+  }
+  .footer_form {
+    font-size: 18px;
+  }
+  #headsearch {
+    margin-left: 0px !important;
+  }
+  #htext {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #homeBtn {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #homeimg {
+    display: none;
+  }
+  #hometext {
+    margin-left: 100px;
+    margin-right: auto;
+  }
+  #contact_description {
+    display: none;
+  }
+  #contact_form {
+    margin-left: 30% !important;
+  }
+  #contact {
+    margin-top: 50px;
+    margin-left: 30%;
+    display: block !important;
+  }
+  .footer_form {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  #htext {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #navigatorcontainer {
+    display: none;
+    margin-top: 0px;
+  }
+  #expander {
+    display: block;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  #collapsecontainer {
+    display: flex;
+    flex-direction: row;
+    top: -5px;
+    float: none;
+  }
+  #hometext {
+    margin-left: 60px;
+  }
+  #htext {
+    width: 280px;
+  }
+}
+@media only screen and (max-width: 701px) {
+  #card1 {
+    width: 80%;
+    height: 100%;
+    float: left;
+    margin-left: 10%;
+  }
+  #card2 {
+    width: 80%;
+    height: 100%;
+    float: left;
+    margin-left: 10%;
+  }
+  #card3 {
+    width: 80%;
+    height: 100%;
+    float: right;
+    margin-right: 10%;
+  }
+  #card4 {
+    width: 80%;
+    height: 100%;
+    float: left;
+    margin-left: 10%;
+  }
+  .grid-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 635px) {
+  #htext {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 555px) {
+  #htext {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 505px) {
+  #htext {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 455) {
+  #htext {
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .description {
+    font-size: 10px;
+  }
+  #htext {
+    width: 100px;
+  }
+}
