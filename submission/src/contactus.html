@@ -76,6 +76,7 @@
             onsubmit="return validateForm()"
             action="https://httpbin.org/post"
             method="post"
+            autocomplete="off"
           >
             <table>
               <tbody>
@@ -123,16 +124,12 @@
                         list="languageList"
                       />
                       <datalist id="languageList">
-                        <option value="HTML" />
-                        <option value="CSS" />
-                        <option value="JavaScript" />
-                        <option value="SQL" />
-                        <option value="PHP" />
-                        <option value="jQuery" />
-                        <option value="Bootstrap" />
-                        <option value="Angular" />
-                        <option value="ASP.NET" />
-                        <option value="XML" />
+                        <option value="Toronto" />
+                        <option value="North York" />
+                        <option value="Scarborough" />
+                        <option value="Mississauga" />
+                        <option value="Ki" />
+                        <option value="kingstone" />
                       </datalist>
                     </td>
                   </label>
@@ -143,7 +140,7 @@
                       Postal Code:
                     </td>
                     <td>
-                      <input type="number" name="postal_code" class="boxStyle" id="postal_code" />
+                      <input type="text" name="postal_code" class="boxStyle" id="postal_code" />
                     </td>
                   </label>
                 </tr>
@@ -203,11 +200,17 @@
                 <tr>
                   <td>
                     <label for="" id="productID" style="display: none;" class="boxes">
-                      Product ID:
+                      Order ID:
                     </label>
                   </td>
                   <td>
-                    <input type="text" name="" id="prdid" class="boxStyle" style="display: none;" />
+                    <input
+                      type="text"
+                      name="orderID"
+                      id="prdid"
+                      class="boxStyle"
+                      style="display: none;"
+                    />
                   </td>
                 </tr>
                 <tr>
@@ -244,9 +247,9 @@
               </p>
               <p style="font-size: 14px; color: white;" class="p2">
                 <br />
-                If you have any problem with your order please inform us<br />
-                and mention the product ID so that we will investigate it<br />
-                as soon as possible.
+                If you have any problem with your order please inform us.<br />
+                Select the relevant radio button and then mention the order<br />
+                ID so that we will investigate it as soon as possible.
               </p>
             </div>
           </div>
